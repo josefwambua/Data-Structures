@@ -1,0 +1,59 @@
+DSA  -> Basically is a structured approach to solving complex problems as well as explaining how data is stored.
+Data is stored and structured depending on the data we have and what manipulations we need to do with it.
+Types of data structures
+Primitive data type - are basic data structures that are provided by programming languages -> float, integer, numbers, characters and booleans.
+Abstract data types - are high level data structures that are built using Primitive data types and provide more specialised and complex operations to solve complex operations.
+Examples of Abstract data types - are linked lists, trees, stacks, qeues, and graphs.
+
+Areas Data structures are used:
+1.In Geographical positional systems - to provide the shortest route possible.
+2.In cruise control systems - to provide the navigations for cars and airplanes.
+3.For providing what users search for in search engines.
+4.For sorting data  - eg sorting movies by rating.
+
+Where DSA is needed:
+i. Managing larged data amounts.
+ii. For scheduling tasks, to decide which tasks should be completed first.
+iii. For planning routes, gps system and finding shortest route possible.
+iv. For optimizing processes, arranging tasks so that they can be accomplished first.
+
+
+Terminologies:
+Time complexity -  Amount of time that an algorithm takes to run depending on the amount of data the algorithm is working on.
+Big O notation - A mathematical algorithm that describes the limiting behaviour of a function when the argument tends towards tends towards a particular value of infirnity. Used in this tutorial to describe the time complexity of an algorithm.
+
+Recursion -> A programming technique where a function calls itself.
+Divide and  conquer -> a method of solving complex problems by breaking them into smaller, more manageable sub problems or chunks and combining the solutions. Recursion is more often used when using this method in an algorithm.
+
+Brute Force -> a simple and straightforward method an algorithm is simply by trying all possible solutions and then choosing the best one.
+
+
+Fibonacci -> A simple method created by fibonacci an Italian mathematician.
+The fibonnaci numbers are 0 & 1 and the next fibonacci number is the sum of the two previous fibonacci numbers.. ie .. 0,1,1,2,3,5,8,13,21,34,55,89...
+
+Programming with loops and programming with Recursion.
+1.Loops
+
+Fn = Fn-1 + Fn-2 with seed values F0 = 0 and F1 = 1
+
+CODE:
+function fibonacci(num) {
+    let num1 = 0;
+    let num2 = 1;
+    let sum;
+    if (num === 1) {
+        return num1;
+    } else if (num === 2) {
+        return num2;
+    } else {
+        for (let i = 3; i <= num; i++) {
+            sum = num1 + num2;
+            num1 = num2;
+            num2 = sum;
+        }
+        return num2;
+    }
+}
+
+console.log("Fibonacci(5): " + fibonacci(5));
+console.log("Fibonacci(8): " + fibonacci(8));
