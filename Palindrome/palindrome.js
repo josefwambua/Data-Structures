@@ -2,11 +2,10 @@
 
 
 // Function to check if a number is a palindrome
-const isPalindrome = function(number) {
-     return  number < 0 ? false : number === +number.toString().split("").reverse().join("");
-};
 
-const result = isPalindrome(10);
-console.log(result);
-const palindromic = isPalindrome(121);
-console.log(palindromic);
+
+const isPalindrome = function(x){
+     return x < 0 ? false : x === +x.toString().split("").reverse().join("");
+}
+
+console.log(isPalindrome(110));
